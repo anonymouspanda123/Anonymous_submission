@@ -1,0 +1,18 @@
+# Never submit or publish: secrets, run outputs, logs (they contain absolute paths), caches
+.env
+__pycache__/
+*.pyc
+smoke_run/
+pipeline/answers/
+pipeline/scores/
+pipeline/improvements/
+pipeline/pairwise_scores/
+pipeline/pairwise_scores_reversed/
+pipeline/deepseek-v4-pro-thinking/
+pipeline/openai-gpt-oss-120b-free/
+pipeline/logs/
+pipeline/run_manifest.json
+pipeline/.merge_batch_cache/
+# improved prompts written by 04_merge_improvements.py next to the initial ones
+pipeline/system_prompts/*_merged*
+pipeline/system_prompts/*_single*

@@ -1,0 +1,4 @@
+# Tested with Python 3.11.4 (Python >= 3.10 is required: the scripts use `X | None` annotations).
+google-genai==1.73.1   # Gemma (generation, improvement, merge)
+openai==1.82.0         # OpenRouter and DeepSeek clients (OpenAI-compatible SDK)
+mistralai==2.4.4       # Mistral judge

@@ -1,0 +1,66 @@
+You are an expert in process mining and business process analysis. Your task is to compare two candidate answers generated for the same benchmark question.
+Evaluate the answers objectively based only on their technical quality. Do not be influenced by writing style, verbosity, confidence, or the order in which the answers are presented. Multiple valid answers may exist; assess which answer better satisfies the task.
+
+Benchmark Category: {Category}
+Question:
+{Question}
+Answer A:
+{Answer_A}
+Answer B:
+{Answer_B}
+
+Compare the two answers according to the following criteria:
+1. Technical Soundness
+Which answer is more technically accurate and consistent with accepted process mining principles?
+2. Completeness
+Which answer addresses more of the requested task and covers the important aspects?
+3. Reasoning Quality
+Which answer provides more logical, coherent, and well-supported reasoning?
+4. Task Relevance
+Which answer stays more focused on the requested task without introducing unnecessary or irrelevant information?
+5. Practical Utility
+
+Which answer would be more useful to a process analyst or practitioner?
+
+For each criterion, provide:
+Winner: Answer A, Answer B, or Tie
+Degree of Improvement:
+None
+Marginal
+Moderate
+Substantial
+Transformative
+
+Justification: One or two concise sentences explaining the decision.
+
+Finally, provide:
+
+Overall Winner: Answer A, Answer B, or Tie
+
+Overall Degree of Improvement:
+None
+Marginal
+Moderate
+Substantial
+Transformative
+Overall Justification:
+
+Summarize in 2–4 sentences why the winning answer is superior and identify the criteria that contributed most to its advantage.
+If the two answers are of essentially equivalent quality, select Tie and None rather than forcing a preference.
+
+Return your evaluation strictly as a JSON object with no other text:
+{
+  "criteria": {
+    "technical_soundness": {"winner": "Answer A", "degree": "Moderate", "justification": "..."},
+    "completeness":         {"winner": "Tie",      "degree": "None",     "justification": "..."},
+    "reasoning_quality":    {"winner": "Answer B", "degree": "Marginal", "justification": "..."},
+    "task_relevance":       {"winner": "Answer A", "degree": "Marginal", "justification": "..."},
+    "practical_utility":    {"winner": "Tie",      "degree": "None",     "justification": "..."}
+  },
+  "overall_winner": "Answer A",
+  "overall_degree": "Moderate",
+  "overall_justification": "2-4 sentences."
+}
+Allowed winner values: "Answer A", "Answer B", "Tie"
+Allowed degree values: "None", "Marginal", "Moderate", "Substantial", "Transformative"
+If winner is "Tie", degree must be "None".

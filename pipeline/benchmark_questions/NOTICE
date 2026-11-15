@@ -1,0 +1,12 @@
+The text files in this folder (cat*.txt) are questions of the third-party benchmark
+
+    PM-LLM-Benchmark, version 2.2
+    https://github.com/fit-alessandro-berti/pm-llm-benchmark
+
+They are not part of the code of this package. The benchmark is distributed under the GNU General Public
+License, version 3 (see the LICENSE file of that repository); these copies remain under that licence.
+The upstream README refers to the paper describing the benchmark: arXiv 2407.13244 (version 1.0).
+
+Category 7 of the benchmark has no text questions; hence the files cat01-cat06 and cat08.
+Question IDs and per-category counts (8, 9, 8, 7, 7, 7, 5) match the upstream index. The files were not diffed
+against the upstream repository. The scripts read only files named cat*.txt, so this notice is ignored by them.
