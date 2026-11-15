@@ -44,7 +44,7 @@ pipeline/
 | Judge | `openai/gpt-oss-120b` | `OPENROUTER_API_KEY` |
 | Judge | `deepseek-v4-pro` (thinking) | `OPEN_ROUTER_API_KEY` |
 
-No temperature or other generation settings are set. The only seed is 42, used for the improvement/test question split.
+ Seed is 42, used for the improvement/test question split.
 
 ## Data
 
